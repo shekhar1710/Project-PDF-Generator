@@ -14,7 +14,7 @@ import org.hibernate.annotations.GeneratorType;
 public class Employee {
 
 	@Id
-//	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "empId")
 	private Integer empId;
 	@Column(name = "empName")

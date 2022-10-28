@@ -11,6 +11,9 @@ public interface EmployeeService {
 	
 	public Employee getEmpById(Integer empId);
 	public List<Employee> getAllEmp();
+	public List<Employee> getByName(String empName);
+	public List<Employee> getEmpGreaterThan50K();
+	public List<Employee> getEmpBySalary(Double empSal);
 	
 	public void saveEmp(Employee emp);
 	
