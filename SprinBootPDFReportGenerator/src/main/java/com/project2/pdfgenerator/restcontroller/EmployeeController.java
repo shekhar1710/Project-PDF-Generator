@@ -16,20 +16,20 @@ import com.project2.pdfgenerator.service.EmployeeService;
 @RestController
 @RequestMapping("/emp")
 public class EmployeeController {
-	
-	@Autowired
+
+@Autowired
 	private EmployeeService service;
 	
 	@GetMapping("/{id}")
-	public Employee getEmpById(@PathVariable Integer id) {
-		return service.getEmpById(id);
+	public Employee getEmpById( @PathVariable Integer id) {	
+	return service.getEmpById(id);
 	}
 	
 	@GetMapping("/getAll")
 	public List<Employee> getAllEmp(){
 		return service.getAllEmp();
 	}
-	
+
 	@GetMapping("/name")
 	public List<Employee> getByName(@RequestParam String name){
 		return service.getByName(name);
